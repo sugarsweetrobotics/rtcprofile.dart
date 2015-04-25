@@ -1,6 +1,6 @@
 # rtcprofile
 
-A library for Dart developers. It is awesome.
+A library for RTC Profile (Defined in Robotics Technology Component in Object Management Group)
 
 ## Usage
 

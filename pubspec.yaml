@@ -1,6 +1,8 @@
 name: rtcprofile
 version: 0.0.1
+author: Yuki Suga (Sugar Sweet Robotics)
 description: A library useful for applications or for sharing on pub.dartlang.org.
+homepage: http://ysuga.net
 dependencies:
   xml: any
 dev_dependencies:
