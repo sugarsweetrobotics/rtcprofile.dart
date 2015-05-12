@@ -112,6 +112,10 @@ class RTCProfile {
     return builder.build();
   }
   
+  String toString() {
+    return buildXml().toXmlString(pretty: true);
+  }
+  
   RTCProfile clone() {
     xml.XmlDocument doc = this.buildXml();
     return RTCProfile.createFromXmlDocument(doc);
