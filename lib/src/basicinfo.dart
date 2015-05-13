@@ -115,6 +115,7 @@ class BasicInfo {
              'rtc:componentKind' : componentKind,
              'rtc:activityType' : activityType,
              'rtc:componentType' : componentType,
+             'rtc:abstract' : abstract,
              'rtc:name' : name},
              nest : () {
                documentation.buildXml(builder);
