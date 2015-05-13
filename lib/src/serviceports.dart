@@ -25,7 +25,7 @@ class ServicePorts {
     name = elem.getAttribute('name', namespace: ns_rtc);
     position = elem.getAttribute('position', namespace : ns_rtcExt);
     
-    elem.findAllElements('ServiceInterface', namespace : ns_rtc).forEach((e) {
+    elem.findAllElements('ServiceInterfaces', namespace : ns_rtc).forEach((e) {
       serviceInterfaces.add(new ServiceInterface()
         ..loadFromXmlElement(e));
     });
@@ -109,7 +109,7 @@ class ServiceInterface {
   }
    
   void buildXml(xml.XmlBuilder builder) {
-    builder.element('ServiceInterface', namespace : ns_rtc,
+    builder.element('ServiceInterfaces', namespace : ns_rtc,
       attributes : {
         'xsi:type' : 'rtcExt:serviceinterface_ext',
         'rtc:name' : name,
