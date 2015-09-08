@@ -83,6 +83,8 @@ class BasicInfo {
     saveProject = elem.getAttribute('saveProject', namespace: ns_rtcExt);
     updateDate = elem.getAttribute('updateDate', namespace: ns_rtc);
     creationDate = elem.getAttribute('creationDate', namespace: ns_rtc);
+
+    abstract = elem.getAttribute('abstract', namespace: ns_rtc);
     
     elem.findAllElements('Doc', namespace : ns_rtcDoc).forEach((elem) {
       documentation.loadFromXmlElement(elem);
