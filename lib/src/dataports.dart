@@ -25,14 +25,22 @@ class DataPorts {
   DataPortsDocumentation documentation;
   
   DataPorts({name :"", type: "", portType: ""}) {
+    this.name = name;
+    this.type = type;
+    this.portType =  portType;
+
     documentation = new DataPortsDocumentation();
   }
 
   DataPorts.InPort({name: "", type: ""})  {
+    this.name = name;
+    this.type = type;
     portType = 'DataInPort';
   }
 
   DataPorts.OutPort({name: "", type: ""})  {
+    this.name = name;
+    this.type = type;
     portType = 'DataOutPort';
   }
   
