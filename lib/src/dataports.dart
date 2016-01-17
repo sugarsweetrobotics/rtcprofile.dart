@@ -24,8 +24,16 @@ class DataPorts {
   
   DataPortsDocumentation documentation;
   
-  DataPorts() {
+  DataPorts({name :"", type: "", portType: ""}) {
     documentation = new DataPortsDocumentation();
+  }
+
+  DataPorts.InPort({name: "", type: ""})  {
+    portType = 'DataInPort';
+  }
+
+  DataPorts.OutPort({name: "", type: ""})  {
+    portType = 'DataOutPort';
   }
   
   void loadFromXmlElement(xml.XmlElement elem) {

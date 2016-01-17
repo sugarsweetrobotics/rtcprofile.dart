@@ -38,6 +38,16 @@ class RTCProfile {
     });
     return ps;
   }
+
+  void addDataPorts(DataPorts dataPort) {
+    dataPorts.add(dataPort);
+  }
+
+  void removeDataPorts(DataPorts dataPort) {
+    dataPorts.remove(dataPort);
+  }
+
+
   
   RTCProfile() {
     dataPorts = new List<DataPorts>();
